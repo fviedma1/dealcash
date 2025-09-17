@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #2C3E50;
+    ::placeholder{
+        color: #2C3E50;
+    }
+}
+.seccio-formulari {
+    text-align: left;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+.seccio-formulari input[type="datetime-local"],
+.seccio-formulari input[type="number"],
+.seccio-formulari textarea {
+    margin-top: 4px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #2c3e50;
+    font-size: 16px;
+    box-sizing  : border-box;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #2C3E50;
+    background-color: white;
+}
+
+
+input[type="datetime-local"] {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    background-color: #28a745;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.boto-enviar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 40px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #2C3E50;
+    transition: background-color 0.3s;
+    &:hover{
+        background-color: #0c9e3d;
+    }
+}
+
+
+#productes {
+    width: 100%;
+    max-width: 500px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    overflow-y: auto;
+}
+
+#productes option {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#productes option:hover {
+    background-color: #e6f7ff;
+    color: #000;
+}
+
+#productes option:checked {
+    color: #2C3E50;
+    background-color: #d2d2d2;
+}

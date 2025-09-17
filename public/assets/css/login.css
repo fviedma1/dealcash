@@ -1,0 +1,71 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    ::placeholder{
+        color: #2C3E50;
+    }
+}
+
+/* Login Section */
+.form {
+    display: flex;  
+    justify-content: center;
+    min-height: calc(100vh - 265px);
+    margin-top: 30px;
+}
+.login-section {
+    background-color: #f5f5f5;
+    text-align: left;
+    width: 300px;
+    margin: 30px 0;
+    color: #2C3E50;
+}
+
+.login-section h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.input-container {
+    margin-bottom: 25px;
+}
+
+input[type="text"], 
+input[type="password"] {
+    margin-top: 4px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #2c3e50;
+    font-size: 16px;
+    box-sizing  : border-box;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #2C3E50;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+/* Login Button */
+.login-section .login-button {
+    background-color: #2C3E50;
+    color: #f5f5f5;
+    &:hover{
+        background-color: #0c9e3d;
+        border: 1px solid#2C3E50;
+    }
+}

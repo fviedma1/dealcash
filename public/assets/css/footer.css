@@ -1,0 +1,32 @@
+/* Estilo para el Footer */
+.footer {
+    background-color: #2C3E50;
+    color: #F4F4F4;
+    padding: 0px 40px; /* Ajusta el padding para hacer el footer fino */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para separación */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.footer-logo {
+    width: 130px;
+    height: auto;
+    padding-top: 20px;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}

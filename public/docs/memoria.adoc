@@ -1,0 +1,362 @@
+= Memòria del Projecte
+Autor: *Deal Cash*
+Data: 8 d'Octubre, 2024
+:toc: left
+:sectnums:
+:imagesdir: images
+
+<<<
+
+== INTRODUCCIÓ
+
+https://drive.google.com/file/d/1LgFHoPb3wR6TsoLLDU5fabd21hiS2rPN/view?usp=sharing[VIDEO DEALCASH]
+
+=== Membres de l’equip de treball
+- **Pau Aranda**
+- **Óscar Ródenas**
+- **Fernando Viedma**
+
+=== Objectiu de l’aplicació
+L'objectiu del projecte és proporcionar una plataforma en línia per a la compra i venda d’articles a través de subhastes físiques de petit format. La plataforma permet als subhastadors organitzar sessions, als usuaris registrats gestionar els seus productes i als no registrats explorar les subhastes, manifestar interès i seguir l’activitat dels productes.
+
+=== Necessitats i requeriments
+
+==== Requeriments funcionals
+- Creació i gestió de sessions de subhastes per part del subhastador.
+- Visualització de subhastes i productes per a usuaris no registrats.
+- Permetre als usuaris registrats gestionar productes i seguir subhastes.
+- Administració de pagaments pendents pel subhastador.
+
+==== Requeriments no funcionals
+- Seguretat per a les transaccions dels usuaris registrats i no registrats.
+- Interfície d’usuari intuïtiva per a la gestió de subhastes i productes.
+- Escalabilitat per manejar múltiples sessions de subhastes simultànies.
+
+=== Target
+La plataforma està dirigida a:
+- **Usuaris registrats**: Persones que participen activament en subhastes, comprant o venent articles.
+- **Usuaris no registrats**: Persones que volen explorar les subhastes sense participar directament, observant els productes i la demanda.
+
+<<<
+
+== DISSENY DE BASE DE DADES
+
+image::plantulm.jpg[]
+
+<<<
+
+== SKETCHING D'INTERFÍCIES
+
+image::1730922271026.jpg[]
+
+<<<
+
+image::1730922271020.jpg[]
+
+<<<
+
+image::1730922271031.jpg[]
+
+<<<
+
+image::1730922271016.jpg[]
+
+<<<
+
+image::1730922271011.jpg[]
+
+<<<
+
+== GUIA D'ESTIL
+
+https://www.figma.com/design/B5vP3fEbEHRZzsgFKAj1Wr/GUIA-D'ESTILS?node-id=0-1&t=UNoiU0DJ1icUK6mF-1[Guía de Estilos en Figma]
+
+=== Paleta de Colors
+
+- *Color Primari* (Blau fosc - `#2C3E50`): Per a la barra de navegació, encapçalaments, i botons d'acció principal. El blau fosc transmet professionalitat i confiança.
+
+- *Color Secundari* (Verd - `#0C9E3D`): Utilitzat en botons d'acció positiva, com "Pujar Producte" o "Participar en la Subhasta". El verd indica èxit i accions positives.
+
+- *Fons i Superfícies* (Blanc - `#F4F4F4` i Gris clar - `#F0F0F0`): Els fons neutres permeten que els elements destacats siguin més visibles.
+
+- *Error* (Vermell - `#F44336`): Per a indicacions d'error, com camps de formulari no vàlids o missatges d'error.
+
+- *Text* (Blau fosc - `#2C3E50`): Utilitzat per al cos del text, garantint una lectura clara.
+
+=== Tipografia
+
+==== Títols
+
+- *Títol Principal (H1 - 32px, ROBOTO)*: Ideal per als encapçalaments més destacats com "Sessions de Subhastes".
+
+  - Color: Blau fosc (`#2C3E50`)
+
+  - Estil: *Bold*
+
+- *Títol Secundari (H2 - 24px, ROBOTO)*: Per a subcategories o seccions.
+
+  - Color: Blau fosc (`#2C3E50`)
+
+  - Estil: *Regular*
+
+- *Títol Tercer (H3 - 18px, EB Garamond)*: Per a subtítols menors o seccions dins de les pàgines.
+
+  - Color: Blau fosc (`#2C3E50`)
+
+  - Estil: *Regular*
+
+==== Cos del Text
+
+- *Cos Principal (16px, EB Garamond)*: Text principal de descripcions de productes i informació rellevant.
+
+  - Color: Blau fosc (`#2C3E50`)
+
+  - Estil: *Regular*
+
+- *Cos Secundari o Descripcions (14px, EB Garamond)*: Per a textos menys destacats com comentaris o informació addicional.
+
+  - Color: Gris clar (`#F4F4F4`)
+
+  - Estil: *Regular*
+
+==== Cites i Testimonis
+
+- *Cites (16px, ROBOTO)*: Les cites o textos destacats s'usarien en cursiva per donar un toc formal.
+
+  - Color: Gris clar (`#F4F4F4`)
+
+  - Estil: *Cursiva*
+
+==== Paraules Resaltades
+
+- *Paraules Resaltades (16px, EB Garamond)*: Paraules clau o termes destacats dins del text.
+
+  - Color: Verd (`#0C9E3D`)
+
+  - Estil: *Bold*
+
+==== Text Menor
+
+- *Text Menor (12px, EB Garamond)*: Per a etiquetes petites o notes, com per exemple, en formularis.
+
+  - Color: Gris clar (`#F4F4F4`)
+
+=== Iconografia
+
+- *Icones de Validació (verd/vermell)*: Per indicar si un producte ha estat acceptat o rebutjat. Color verd per a validacions (`#0C9E3D`) i vermell per a errors (`#F44336`).
+
+Mides d'Icones:
+
+- *Petites (16px)*: En accions secundàries.
+
+- *Mitjanes (24px)*: Per a botons o accions destacades.
+
+- *Grans (32px)*: Per a icones molt importants dins de la interfície.
+
+- *Icones en Botons*: Botons com "Pujar Producte" poden incloure icones, com una fletxa amunt al costat del text.
+
+=== Botons
+
+Els botons han de tenir comportaments visuals clars i ser fàcilment identificables:
+
+- *Botó Principal (Verd - `#0C9E3D`)*:
+  
+  - Text: Blanc (`#F4F4F4`)
+
+  - Hover: Taronja més intens (`#FF794D`)
+  
+  - Mides: Mitjà (150px x 45px)
+
+- *Botó Secundari (Gris clar - `#F4F4F4`)*:
+
+  - Text: Negre (`#333333`)
+
+  - Hover: Gris més fosc (`#ecf0f1`)
+
+  - Mides: Petit (120px x 40px)
+
+- *Botó d’Error o Cancel·lació (Vermell - `#F44336`)*:
+
+  - Text: Blanc (`#FFFFFF`)
+
+  - Hover: Vermell més fosc.
+
+=== Enllaços
+
+- *Normal*: Blau fosc (`#2C3E50`), subratllat.
+
+- *Hover*: Blau més clar.
+
+- *Visitats*: Blau fosc sense subratllat.
+
+=== Elements de Formulari
+
+- *Camps de text*:
+  
+  - Normal: Fons blanc (`#FFFFFF`), vora gris (`#CCCCCC`).
+  
+  - En edició: Vora blava (`#2196F3`).
+  
+  - Error: Vora vermella (`#F44336`).
+  
+  - Inactiu: Fons gris clar (`#F0F0F0`), text gris.
+
+- *Checkbox i Selectors*:
+  
+  - Normal: Quadrat gris clar (`#CCCCCC`).
+  
+  - Seleccionat: Quadrat verd (`#0C9E3D`).
+
+=== Gràfics i Targetes
+
+- *Targetes de productes*:
+
+  - Normal: Fons blanc, vora subtil gris clar.
+
+  - Hover: Llum a la vora, lleugera ombra.
+
+  - Mides: Variable segons la informació del producte.
+
+  - Animacions: Petites transicions suaus en passar per sobre d’un element, com l’augment lleuger de l'ombra en les targetes o els botons per indicar interactivitat.
+
+<<<
+
+== CONFECCIÓ DE MANUAL D'INSTALACIÓ
+
+El manual d'instal·lació de la plataforma Deal Cash estableix els passos necessaris per a la configuració del sistema de subhastes en els entorns de desenvolupament i producció. A continuació, es detallen els requisits i la configuració:
+
+=== Requisits previs
+
+- **Sistema Operatiu**: Debian 12 sense interfície gràfica.
+
+- **Software Necessari**:
+
+  - Apache Server.
+
+  - PHP 8.x.x.
+
+  - Openssh-server per a connexió remota.
+
+  - Base de dades (MariaDB).
+
+  - Client Git.
+
+=== Configuració del servidor
+
+- Configuració de dos entorns en Isard: desenvolupament i producció, amb un "hostname" diferenciat per identificar-los.
+
+- Connexió SSH (`ssh isard@10.x.x.x` després de configurar la VPN).
+
+- Assignació manual d'IP en les interfícies de xarxa segons les especificacions per a la xarxa local.
+
+=== Clonació del repositori
+
+- Clonar el projecte des del repositori Git a una carpeta del perfil d'usuari (`git clone https://gitlab.com/parmi_project/projecte_1_subastas.git`).
+
+- Moure el codi font a la carpeta predeterminada d'Apache per a servir l'aplicació.
+
+=== Instal·lació de la base de dades
+
+- Executar el script SQL proporcionat en el fitxer `app/config/db_connection.php` per a inicialitzar la base de dades amb les dades de prova (usuaris, productes, etc.).
+
+=== Configuració de variables d'entorn
+
+- Especifiqueu les variables de configuració al fitxer `depuracio_config.php` per al mode de depuració i visibilitat dels productes abans de la validació.
+
+=== Comandes per a iniciar i reiniciar el sistema
+
+- Reinicieu el servidor Apache i la base de dades després de configurar totes les opcions.
+
+<<<
+
+== CONFECCIÓ DEL MANUAL D'USUARI
+
+Aquest manual d'usuari descriu les funcions principals de la plataforma Deal Cash per a cadascun dels tipus d'usuaris, incloent-hi usuaris registrats i no registrats, i les seves respectives accions:
+
+=== Accés a la plataforma
+
+- Accediu a la URL del servidor (Màquina de Desplegament de Producció: `http://192.168.50.171`, Màquina de Desplegament de Desenvolupament: `http://192.168.50.172`) per a entrar a l'aplicació.
+
+- Inicieu sessió amb les credencials predefinides per a venedors i subhastadors, segons el rol.
+
+=== Rols i funcionalitats
+
+- **Venedor**:
+
+  - Accés al seu panell per veure i gestionar els productes, l'estat de validació, i opcions per afegir productes per a subhasta.
+
+  - Rebre notificacions sobre canvis d'estat dels seus productes.
+
+- **Subhastador**:
+
+  - Accés al panell de subhastador, amb funcions per revisar, validar productes, assignar-los a subhastes i crear sessions de subhasta.
+
+  - Gestió de sessions de subhasta, assignació de productes, i actualització d'estat durant la subhasta.
+
+=== Gestió de productes
+
+- Afegiu productes amb detalls com nom, descripció, preu mínim, i observacions.
+
+- Visualització de l'estat actual del producte i la seva visibilitat per als usuaris.
+
+=== Interacció en la subhasta
+
+- Iniciar i finalitzar sessions de subhasta. Els productes en subhasta poden ser marcats com venuts o deserts, amb notificacions sobre el seu estat final.
+
+- **Registre de compradors**: Només es requereixen nom i DNI per registrar compradors abans de la venda de cada producte en subhasta.
+
+<<<
+
+== LÍNIES FUTURES
+
+- Fer més mes coses amb JavaScript.
+
+- Que es puguin registrar el usuaris.
+
+- Que quan un producte sigui rebutjat s'elimini automaticament.
+
+<<<
+
+== GLOSSARI
+
+- *Subhasta*: Procés de venda pública de productes al millor postor, on els compradors fan licitacions.
+
+- *Venedor*: Usuari registrat que posa a la venda productes per a la subhasta.
+
+- *Subhastador*: Usuari responsable de gestionar i validar els productes, així com organitzar i supervisar les subhastes.
+
+- *Sessió de Subhasta*: Un esdeveniment programat on es posen a la venda els productes aprovats pels subhastadors.
+
+- *Producte Desert*: Producte que no ha estat venut durant una subhasta.
+
+<<<
+
+== PRESENTACIÓ DEL PROJECTE
+
+- *Nom del projecte*: Deal Cash.
+
+- *Objectiu*: Crear una plataforma en línia per a la compra i venda d'articles, a través de subhastes físiques de petit format, oferint una solució completa per a la gestió de productes, sessions de subhasta i interacció amb els usuaris.
+
+- *Funcionalitats destacades*:
+
+  - Pujar i gestionar productes per part dels venedors.
+
+  - Creació de sessions de subhastes i validació de productes pels subhastadors.
+
+  - Participació en subhastes tant per usuaris registrats com no registrats.
+
+- *Impacte previst*: La plataforma busca facilitar la participació en subhastes i crear una experiència d’usuari interactiva i segura, millorant l'accés a mercats de productes diversos.
+
+<<<
+
+== ENLLAÇOS DE REFERÈNCIA
+
+- https://blog.ahierro.es/como-configurar-virtual-hosts-en-apache-y-ubuntu/
+
+- https://geekytheory.com/tutorial-vagrant-1-que-es-y-como-usarlo/
+
+- https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/tutorial-de-gitlab/
+
+- https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/instalar-php/
+
+- https://www.figma.com/community/file/923140611594993345

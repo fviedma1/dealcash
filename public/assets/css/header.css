@@ -1,0 +1,98 @@
+/* Estilos Generales del Header Compacto */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2C3E50;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+/* Logo y Título */
+.main-header .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo {
+    width: 130px;
+    height: auto;
+    padding-top: 20px;
+    transition: transform 0.3s ease;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.title {
+    color: #F4F4F4;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li a {
+    color: #F4F4F4;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 4px;
+    &:hover{
+        color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Botones de Autenticación */
+.auth {
+    display: flex;
+    align-items: center;
+}
+
+.auth .auth-button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.login-button {
+    background-color: #0c9e3d;
+    &:hover{
+        background-color: #0e692c;
+    }
+}
+
+.logout-button {
+    background-color: #ff0000;
+    &:hover{
+        background-color: #a50202;
+    }
+}

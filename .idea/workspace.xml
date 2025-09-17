@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1210dfed-ed9e-4ae4-982c-7ef4bfa252cb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLabMergeRequestFiltersHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPENED&quot;,
+    &quot;assignee&quot;: {
+      &quot;type&quot;: &quot;org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue&quot;,
+      &quot;username&quot;: &quot;fviedma1&quot;,
+      &quot;fullname&quot;: &quot;Fernando Viedma Maza&quot;
+    }
+  }
+}</component>
+  <component name="GitLabMergeRequestsSettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;first&quot;: &quot;https://gitlab.com/parmi_project/projecte_1_subastas.git&quot;,
+    &quot;second&quot;: &quot;dc9a90b3-e0fa-46f3-ae12-ce25221e7c48&quot;
+  }
+}</component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php\php.exe" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2nWFuSfrXm7R55LdYQ20qxr9JCl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "develop",
+    "last_opened_file_path": "C:/Users/viedm/OneDrive/Escritorio/Varios/projecte_1_subastas",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\viedm\OneDrive\Documentos\GIT\projecte_1_subastas\public\assets\img" />
+      <recent name="C:\Users\viedm\OneDrive\Documentos\GIT\projecte_1_subastas\public\app\models" />
+      <recent name="C:\Users\viedm\OneDrive\Documentos\GIT\projecte_1_subastas\public\vagrant_files\images" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.23339.16" />
+        <option value="bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.23339.16" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1210dfed-ed9e-4ae4-982c-7ef4bfa252cb" name="Changes" comment="" />
+      <created>1729081148324</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729081148324</updated>
+      <workItem from="1729081149654" duration="276000" />
+      <workItem from="1729085539247" duration="1849000" />
+      <workItem from="1729087401322" duration="155000" />
+      <workItem from="1729087564892" duration="8290000" />
+      <workItem from="1729098348390" duration="8568000" />
+      <workItem from="1729107128429" duration="200000" />
+      <workItem from="1729172305971" duration="10082000" />
+      <workItem from="1729184894755" duration="2625000" />
+      <workItem from="1729258367779" duration="8206000" />
+      <workItem from="1729272037712" duration="1656000" />
+      <workItem from="1729358256011" duration="335000" />
+      <workItem from="1729518092605" duration="7722000" />
+      <workItem from="1729605353593" duration="3027000" />
+      <workItem from="1729707869567" duration="2138000" />
+      <workItem from="1729933118520" duration="2348000" />
+      <workItem from="1729953981435" duration="5797000" />
+      <workItem from="1730049910117" duration="464000" />
+      <workItem from="1730051779338" duration="701000" />
+      <workItem from="1730052807742" duration="1062000" />
+      <workItem from="1730126150852" duration="444000" />
+      <workItem from="1730212818397" duration="1894000" />
+      <workItem from="1730323780220" duration="557000" />
+      <workItem from="1730385562628" duration="7920000" />
+      <workItem from="1730393972117" duration="1491000" />
+      <workItem from="1730817014119" duration="2022000" />
+      <workItem from="1730826986337" duration="3821000" />
+      <workItem from="1730916420773" duration="5437000" />
+      <workItem from="1730967435059" duration="2401000" />
+      <workItem from="1731003355822" duration="2002000" />
+      <workItem from="1731010180104" duration="175000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

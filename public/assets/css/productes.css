@@ -1,0 +1,173 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    ::placeholder{
+        color: #2C3E50;
+    }
+}
+
+.product-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+.product-filter h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.product-filter input, .product-filter select, .product-filter button {
+    border: none;
+    font-size: 0.9em;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    padding: 10px 20px;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.product-filter select, .product-filter button{
+    cursor: pointer;
+}
+
+.product-filter button {
+    background-color: #2C3E50;
+    color: #f5f5f5;
+    &:hover{
+        background-color: #0c9e3d;
+    }
+}
+
+.product-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: calc(100vh - 357px);
+}
+.product-flex .no-results {
+    margin: 40px auto;
+    text-align: center;
+    font-size: 24px;
+    color: #2C3E50;
+}
+
+.product-card {
+    flex: 0 0 calc(20% - 20px);
+    box-sizing: border-box;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 25px 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 263.84px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: auto;
+    height: 100%;
+    object-fit: fill;
+}
+
+.product-card form {
+    align-self: end;
+    margin-top: auto;
+}
+
+.product-card h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #2C3E50;
+}
+
+.product-card p {
+    margin: 10px 0;
+    color: #2C3E50;
+    font-size: 14px;
+}
+
+
+/* Base styles for the buttons */
+.eliminar-like button, .donar-like button {
+    padding: 10px;
+    border: none;
+    background-color: #ffff;
+    cursor: pointer;
+}
+
+/* Color for the default icon */
+.donar-like .fa-heart, .eliminar-like .fa-heart {
+    color: red ;
+    font-size: large;
+}
+
+/* Change from regular heart to solid heart on hover for donar-like */
+
+.donar-like:hover .fa-regular::before {
+    content: "\f004"; /* Unicode for solid heart icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: red;
+    font-size: large;
+}
+
+/* Change from solid heart to heart-crack on hover for eliminar-like */
+.eliminar-like:hover .fa-heart::before {
+    content: "\f7a9"; /* Unicode for heart-crack icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: red;
+    font-size: large;
+}
+
+
+/* Pagination */
+
+.paginacio {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.paginacio a {
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+}
+
+.paginacio a.actiu {
+    font-weight: bold;
+    background-color: #2C3E50;
+    color: #f5f5f5;
+}
+
+.paginacio a:hover {
+    background-color: #0c9e3d;
+}
+

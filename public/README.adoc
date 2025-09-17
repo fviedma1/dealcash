@@ -1,0 +1,36 @@
+= DealCash
+
+== Membres del Grup
+- Pau Aranda Minguet
+- Óscar Ródenas Luján
+- Fernando Viedma Maza
+
+== Fonts Externes
+- https://gitlab.com/parmi_project/projecte_1_subastas/-/issues[GitLab Issues]
+
+== Introducció
+Som un grup d'alumnes de 2DAW que hem desenvolupat el projecte **DealCash**.Aquest projecte consisteix en crear una plataforma en línia on els usuaris poden participar en subhastes de diversos articles. El nostre objectiu és proporcionar una interfície senzilla i intuïtiva per a la compra i venda d'objectes a través de subhastes, amb característiques que garantin una experiència d'usuari òptima.
+
+En aquest README, trobaràs informació rellevant sobre el nostre projecte, com ara els passos per a la col·laboració i la configuració inicial.
+
+== Proves i Desplegament
+
+Aquí s'indicaràn les màquines que estarem utilitzant, i algunes dades necesàries per poder fer el desplegament.
+
+=== Màquina per fer el desplegament de Producció
+
+Nom: Client Projecte 2DAWT - Alumnat (Fernando Viedma Maza)
+
+IP: 192.168.50.171
+
+=== Màquina per fer el desplegament de Desenvolupament
+
+Nom: Client Projecte 2DAWT - Alumnat (Pau Aranda Minguet)
+
+IP: 192.168.50.172
+
+== Autors i Reconeixement
+Apreciem el suport de tots els nostres companys i professors durant el desenvolupament d'aquest projecte.
+
+== Estat del Projecte
+Actualment, el projecte es troba en fase de desenvolupament. Estem treballant en diverses funcionalitats i ben aviat llançarem una versió inicial.

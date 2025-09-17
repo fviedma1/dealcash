@@ -1,0 +1,107 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Main content */
+.product-section {
+    text-align: start;
+}
+
+.product-section h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding: 20px 40px;
+}
+
+.product-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Centra las tarjetas en el contenedor */
+}
+
+.product-card {
+    flex: 0 0 calc(20% - 20px);
+    box-sizing: border-box;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón sobre la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas al pasar el ratón por encima */
+}
+
+.product-image {
+    width: 263.84px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: auto;
+    height: 100%;
+    object-fit: fill;
+}
+
+.product-card form{
+    align-self: end;
+    margin-top: auto;
+}
+
+.product-card h2, p {
+    margin: 10px 0;
+    color: #2c3e50;  /* Texto más oscuro para mayor formalidad */
+    font-size: 14px; /* Reducir tamaño del texto */
+}
+
+/* Colores de borde según el estado */
+.estado-pendent {
+    border-color: orange;
+    box-shadow: 0 4px 8px orange;
+}
+.estado-venut {
+    border-color: green;
+    box-shadow: 0 4px 8px green;
+}
+.estado-validat {
+    border-color: yellow;
+    box-shadow: 0 4px 8px yellow;
+}
+
+.estado-rebutjat {
+    border-color: red;
+    box-shadow: 0 4px 8px red;
+}
+
+.estado-assignat {
+    border-color: purple;
+    box-shadow: 0 4px 8px purple;
+}
+
+
+/* Estilo del botón de eliminación */
+.remove-button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.remove-button i {
+    color: red;
+}

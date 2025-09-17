@@ -1,0 +1,62 @@
+@startuml
+left to right direction
+
+entity Usuari {
+  Id_Usuari : SMALLINT <<key>>
+  Nom : VARCHAR
+  Cognom : VARCHAR
+  Correu : VARCHAR
+  Contrasenya : VARCHAR
+  Data_Registre : DATETIME
+  Nom_Usuari : VARCHAR
+  Rol : ENUM('comprador', 'venedor', 'subhastador')
+}
+
+entity Producte {
+  Id_Producte : SMALLINT <<key>>
+  Nom : VARCHAR
+  Descripcio_curta : VARCHAR
+  Descripcio_llarga : VARCHAR
+  Foto : VARCHAR
+  Preu : DOUBLE
+  Estat : ENUM('pendent', 'validat', 'rebutjat', 'assignat', 'venut', 'assignat a una subhasta', 'retirat')
+  Observacio_Subhastador : VARCHAR
+  Usuari_Id : SMALLINT
+  Rol_Usuari : ENUM('comprador', 'venedor')
+  Subhasta_Id : SMALLINT
+}
+
+entity Missatge {
+  Id_Missatge : INT <<key>>
+  Producte_Id : SMALLINT
+  Venedor_Id : SMALLINT
+  Missatge : TEXT
+  Estat : VARCHAR
+  Data_Hora : TIMESTAMP
+}
+
+entity Likes_Producte {
+  Id_Like : INT <<key>>
+  Producte_Id : SMALLINT
+  Usuari_Id : SMALLINT
+  Guest_Id : VARCHAR
+}
+
+entity Subhasta {
+  Id_Subhasta : SMALLINT <<key>>
+  Data_Hora : DATETIME
+  Descripcio : VARCHAR
+  Percentatge : INT
+  Subhastador_Id : SMALLINT
+  Estat : ENUM('oberta', 'tancada', 'iniciada')
+}
+
+Usuari "1" -- "N" Producte : "publica"
+Usuari "1" -- "N" Missatge : "envia/rep"
+Producte "1" -- "N" Missatge : "conté"
+Usuari "1" -- "N" Likes_Producte : "marca com a like"
+Producte "1" -- "N" Likes_Producte : "té likes"
+Usuari "1" -- "N" Subhasta : "realitza"
+Subhasta "1" -- "N" Producte : "conté"
+
+@enduml
